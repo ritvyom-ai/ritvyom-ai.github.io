@@ -1,6 +1,6 @@
 # Yashora Reel Generator
 
-**Yashora Reel Generator** is a text-to-video and short-form reel creation app developed under **RITVYOM** by **Shani Nishad**. Built for both content creators and everyday users, it turns text prompts and scripts into finished videos with **on-device rendering** and **no backend server** required for video processing.
+**Yashora Reel Generator** is a text-to-video and short-form reel creation app developed under **RITVYOM** by **Surya Dev Nishad**. Built for both content creators and everyday users, it turns text prompts and scripts into finished videos with **on-device rendering** and **no backend server** required for video processing.
 
 > **Get Yashora Reel Generator on Google Play:**  
 > [Download Yashora Reel Generator on Google Play Store](https://play.google.com/store/apps/details?id=com.ritvyom.yashoraReelgenerator&pcampaignid=web_share)
@@ -28,6 +28,6 @@
 - **Everyday Users:** Turn text thoughts, stories, or prompts into shareable videos easily on-device without complex external editing tools.
 
 ## Creator & Publisher
-- **Developer / Creator:** Shani Nishad
+- **Developer / Creator:** Surya Dev Nishad
 - **Publisher / Brand:** RITVYOM
 - **Google Play Store:** [Yashora Reel Generator](https://play.google.com/store/apps/details?id=com.ritvyom.yashoraReelgenerator&pcampaignid=web_share)
