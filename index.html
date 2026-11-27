@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ritvyom | Apps & Studio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritvyom | Yashora Reel Generator &amp; Apps by Surya Dev Nishad</title>
+  <meta name="description" content="Yashora Reel Generator by Surya Dev Nishad (RITVYOM) turns text and scripts into full videos 100% on-device with ElevenLabs/Gemini voices, custom or no watermark, multi-aspect exports, and up to 2K resolution." />
+
+  <!-- SEO & GEO Structured Data for Search Engines and AI Chatbots -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Yashora Reel Generator",
+    "operatingSystem": "Android",
+    "applicationCategory": "MultimediaApplication",
+    "description": "Text-to-video and vertical reel generator app with 100% on-device rendering and zero backend server, supporting custom/pasted/AI scripts, ElevenLabs and Gemini voiceovers, integrated media sources, custom handle or no watermark, 9:16, 16:9, 1:9, and 4:5 aspect ratios, and exports from 360p up to 2K.",
+    "author": {
+      "@type": "Person",
+      "name": "Surya Dev Nishad"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RITVYOM"
+    },
+    "url": "https://ritvyom-ai.github.io/",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.ritvyom.yashoraReelgenerator&pcampaignid=web_share"
+  }
+  </script>
+
   <style>
     :root {
       --primary: #2563eb;
-      --bg: #0f172a;
-      --card-bg: #1e293b;
+      --accent: #00f0ff;
+      --purple: #7b2cbf;
+      --bg: #070911;
+      --card-bg: #111625;
+      --card-border: rgba(255, 255, 255, 0.09);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
+
     body {
-      background-color: var(--bg);
+      background: radial-gradient(circle at top, #131b33 0%, var(--bg) 65%);
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
@@ -27,73 +56,207 @@
       align-items: center;
       padding: 40px 20px;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 920px;
       width: 100%;
-      text-align: center;
     }
-    .brand-logo {
-      width: 84px;
-      height: 84px;
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+
+    .hero {
+      text-align: center;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
       border-radius: 22px;
+      padding: 36px 24px;
+      margin-bottom: 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    .brand-logo {
+      width: 78px;
+      height: 78px;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 38px;
-      font-weight: 700;
+      font-size: 34px;
+      font-weight: 800;
       color: #fff;
-      margin: 0 auto 20px;
+      margin: 0 auto 16px;
       box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
     }
+
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       font-weight: 800;
-      margin-bottom: 12px;
-      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+      letter-spacing: -0.4px;
     }
+
     p.tagline {
-      font-size: 1.15rem;
+      font-size: 1.08rem;
       color: var(--text-muted);
-      margin-bottom: 40px;
+      max-width: 660px;
+      margin: 0 auto 14px;
       line-height: 1.6;
     }
+
+    .creator-line {
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      margin-bottom: 18px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(0, 240, 255, 0.08);
+      border: 1px solid rgba(0, 240, 255, 0.25);
+      color: #bae6fd;
+    }
+
     .section-title {
       font-size: 1.3rem;
-      font-weight: 600;
+      font-weight: 700;
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       border-left: 4px solid var(--primary);
       padding-left: 12px;
     }
+
+    .showcase-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 26px;
+      margin-bottom: 36px;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 680px) {
+      .showcase-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .showcase-actions, .feature-tags {
+        justify-content: center;
+      }
+    }
+
+    .app-logo-box {
+      width: 156px;
+      height: 156px;
+      margin: 0 auto;
+      border-radius: 36px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 16px 36px rgba(0, 0, 0, 0.7),
+        0 0 28px rgba(0, 240, 255, 0.16);
+    }
+
+    .app-logo-box svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .glow-pulse {
+      animation: pulseGlow 2.4s ease-in-out infinite alternate;
+      transform-origin: 54px 54px;
+    }
+
+    @keyframes pulseGlow {
+      from {
+        opacity: 0.55;
+        transform: scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1.04);
+      }
+    }
+
+    .showcase-content h3 {
+      font-size: 1.45rem;
+      margin-bottom: 8px;
+    }
+
+    .showcase-content p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .feature-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: rgba(123, 44, 191, 0.16);
+      border: 1px solid rgba(157, 78, 221, 0.35);
+      color: #e9d5ff;
+    }
+
+    .showcase-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 44px;
     }
+
     .card {
       background: var(--card-bg);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--card-border);
       border-radius: 16px;
       padding: 24px;
       text-align: left;
       transition: transform 0.2s ease, border-color 0.2s ease;
     }
+
     .card:hover {
       transform: translateY(-4px);
       border-color: rgba(59, 130, 246, 0.5);
     }
+
     .card h3 {
-      font-size: 1.25rem;
+      font-size: 1.18rem;
       margin-bottom: 8px;
     }
+
     .card p {
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 20px;
+      line-height: 1.55;
+      margin-bottom: 18px;
     }
+
     .btn {
       display: inline-block;
       background: var(--primary);
@@ -103,20 +266,24 @@
       border-radius: 10px;
       font-size: 0.9rem;
       font-weight: 600;
-      transition: background 0.2s ease;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
+
     .btn:hover {
       background: #1d4ed8;
+      transform: translateY(-1px);
     }
+
     footer {
       margin-top: auto;
-      padding-top: 30px;
+      padding-top: 26px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       width: 100%;
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       color: var(--text-muted);
     }
+
     footer a {
       color: var(--text-muted);
       text-decoration: underline;
@@ -127,33 +294,114 @@
 <body>
 
   <div class="container">
-    <div class="brand-logo">R</div>
-    <h1>Ritvyom</h1>
-    <p class="tagline">Crafting modern, high-performance mobile applications and creative tools.</p>
+    <header class="hero">
+      <div class="brand-logo">R</div>
+      <h1>RITVYOM</h1>
+      <p class="tagline">
+        Crafting modern, privacy-first mobile applications and on-device creative tools for creators and everyday users.
+      </p>
+      <p class="creator-line">
+        Developed by <strong>Surya Dev Nishad</strong> &bull; Published under <strong>RITVYOM</strong>
+      </p>
+      <div class="pill-row">
+        <span class="pill">100% On-Device Rendering</span>
+        <span class="pill">No Backend Server</span>
+        <span class="pill">Text-to-Reel Studio</span>
+        <span class="pill">Up to 2K Export</span>
+      </div>
+    </header>
 
-    <h2 class="section-title">Featured Apps</h2>
+    <h2 class="section-title">Featured App — Yashora Reel Generator</h2>
+    <section class="showcase-card">
+      <div class="app-logo-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="Yashora Reel Generator Logo">
+          <defs>
+            <linearGradient id="bgLinear" x1="0" y1="0" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0B0D14" />
+              <stop offset="50%" stop-color="#07080D" />
+              <stop offset="100%" stop-color="#030406" />
+            </linearGradient>
+            <radialGradient id="bgAmbient" cx="54" cy="46" r="48" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.15" />
+              <stop offset="50%" stop-color="#7B2CBF" stop-opacity="0.08" />
+              <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+            </radialGradient>
+            <radialGradient id="logoBacklight" cx="54" cy="48" r="34" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.28" />
+              <stop offset="60%" stop-color="#7B2CBF" stop-opacity="0.14" />
+              <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="yFill" x1="54" y1="29.5" x2="54" y2="78.6" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="70%" stop-color="#F8FAFC" />
+              <stop offset="100%" stop-color="#E2E8F0" />
+            </linearGradient>
+            <filter id="neonShadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-color="#00F0FF" flood-opacity="0.28" />
+            </filter>
+          </defs>
+
+          <rect x="0" y="0" width="108" height="108" fill="url(#bgLinear)" />
+          <circle cx="54" cy="54" r="44" fill="url(#bgAmbient)" />
+          <circle class="glow-pulse" cx="54" cy="54" r="30" fill="url(#logoBacklight)" />
+
+          <g fill="url(#yFill)" stroke="rgba(255,255,255,0.4)" stroke-width="0.6" filter="url(#neonShadow)">
+            <path d="M 24.5,29.5 L 31,29.5 L 47.4,54.8 L 40.9,54.8 Z" />
+            <path d="M 77,29.5 L 83.5,29.5 L 67.1,54.8 L 60.6,54.8 Z" />
+            <path d="M 35.1,29.5 L 41.7,29.5 L 54,40.9 L 66.3,29.5 L 72.9,29.5 L 59.7,54 L 59.7,78.6 L 48.3,78.6 L 48.3,54 Z" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="showcase-content">
+        <h3>Yashora Reel Generator</h3>
+        <p>
+          Create complete reels and videos from text or scripts right on your device with zero backend servers. Start from <strong>Create Reel</strong> to write, paste, or AI-generate scripts, add voices via <strong>ElevenLabs</strong> or <strong>Gemini</strong> API keys, pull visuals from integrated media sources, and export locally.
+        </p>
+
+        <div class="feature-tags">
+          <span class="tag">Write / Paste / AI Script</span>
+          <span class="tag">ElevenLabs &amp; Gemini Voice</span>
+          <span class="tag">100% On-Device Render</span>
+          <span class="tag">Custom Handle / No Watermark</span>
+          <span class="tag">9:16 &bull; 16:9 &bull; 1:9 &bull; 4:5</span>
+          <span class="tag">360p to 2K Export</span>
+        </div>
+
+        <div class="showcase-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ritvyom.yashoraReelgenerator&pcampaignid=web_share" class="btn" target="_blank" rel="noopener">
+            Get on Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+
     <div class="card-grid">
       <div class="card">
-        <h3>Yashora Reel Generator</h3>
-        <p>A smart video and reel creation utility designed to generate dynamic short-form content effortlessly.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.ritvyom.yashoraReelgenerator" class="btn" target="_blank">View on Play Store</a>
+        <h3>How It Works</h3>
+        <p>
+          Open <strong>Create Reel</strong> on the home screen, write/paste/generate your script, generate voiceovers using ElevenLabs or Gemini, fetch integrated media clips, and render locally on your phone with no backend.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.ritvyom.yashoraReelgenerator&pcampaignid=web_share" class="btn" target="_blank" rel="noopener">Try Yashora Now</a>
       </div>
 
       <div class="card">
         <h3>Developer Support</h3>
-        <p>Have questions, feedback, or need assistance regarding our apps and services?</p>
+        <p>
+          Have questions, feedback, or need assistance regarding Yashora Reel Generator or apps published under RITVYOM?
+        </p>
         <a href="mailto:ritvyom@gmail.com" class="btn">Contact Developer</a>
       </div>
     </div>
 
     <footer>
-      <p>&copy; 2026 Ritvyom. All rights reserved.</p>
+      <p>&copy; 2026 RITVYOM &bull; Created by Surya Dev Nishad. All rights reserved.</p>
       <div style="margin-top: 10px;">
         <a href="/app-ads.txt">app-ads.txt</a>
+        <a href="/terms.html">Terms</a>
       </div>
     </footer>
   </div>
 
 </body>
-  </html>
-  
+</html>
