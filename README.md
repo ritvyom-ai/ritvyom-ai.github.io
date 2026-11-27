@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Yashora Reel Generator Logo" width="128" />
+  <img src="logo.png.jpg" alt="Yashora Reel Generator Logo" width="128" />
   <h1>Yashora Reel Generator</h1>
   <p><strong>Turn Text Ideas &amp; Scripts into Complete Videos — Built for Faceless Channels, Students &amp; Creators</strong></p>
   <p>Developed under <strong>RITVYOM</strong> by <strong>Surya Dev Nishad</strong></p>
